@@ -15,7 +15,7 @@
 
 <header class="site-header" id="siteHeader">
   <a class="brand" href="#top">
-    <img src="assets/fortune-logo.png" alt="Fortune Group" class="brand-logo">
+    <img src="assets/fortune-logo.png" alt="Fortune Group" class="brand-logo brand-logo--fortune">
     <span class="brand-divider" aria-hidden="true"></span>
     <img src="assets/saffron-logo.png" alt="Saffron Spaces" class="brand-logo brand-logo--saffron">
   </a>
@@ -26,7 +26,18 @@
     <a href="#location">Location</a>
   </nav>
   <a class="header-cta" href="#enquire">Enquire Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#overview">Overview</a>
+  <a href="#features">Features</a>
+  <a href="#sustainability">Sustainability</a>
+  <a href="#location">Location</a>
+  <a href="#enquire" class="mobile-nav-cta">Enquire Now</a>
+</nav>
 
 <main id="top">
 
@@ -57,6 +68,17 @@
       <span>ECO-CONSCIOUS DESIGN</span><span>&bull;</span>
       <span>FLEXIBLE WORKSPACES</span><span>&bull;</span>
       <span>TOP-TIER AMENITIES</span><span>&bull;</span>
+    </div>
+  </section>
+
+  <section class="cinematic" id="cinematic">
+    <div class="cinematic-sticky">
+      <img src="assets/fortune-elite-hero.jpg" alt="Fortune Elite building render, close view" id="cinematicImg">
+      <div class="cinematic-overlay"></div>
+      <div class="cinematic-caption reveal">
+        <p class="tag tag--light">A Landmark In The Making</p>
+        <h2>Rising on Western Express Highway</h2>
+      </div>
     </div>
   </section>
 
@@ -106,6 +128,10 @@
   </section>
 
   <section class="section sustainability" id="sustainability">
+    <svg class="building-draw" id="buildingDraw" viewBox="0 0 400 300" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
+      <path d="M40 280 V90 H90 V60 H140 V90 H190 V40 H240 V90 H290 V70 H340 V280 Z M90 90 V280 M140 90 V280 M190 90 V280 M240 90 V280 M290 90 V280" />
+      <path class="building-draw-windows" d="M60 110h10v10H60zM60 140h10v10H60zM60 170h10v10H60zM60 200h10v10H60zM60 230h10v10H60zM110 110h10v10h-10zM110 140h10v10h-10zM110 170h10v10h-10zM110 200h10v10h-10zM160 110h10v10h-10zM160 140h10v10h-10zM160 170h10v10h-10zM160 200h10v10h-10zM210 60h10v10h-10zM210 90h10v10h-10zM210 120h10v10h-10zM260 110h10v10h-10zM260 140h10v10h-10zM260 170h10v10h-10zM310 90h10v10h-10zM310 120h10v10h-10zM310 150h10v10h-10z" />
+    </svg>
     <div class="sustainability-inner">
       <p class="tag reveal tag--light">Our Commitment</p>
       <h2 class="reveal">Efficiency and environmental responsibility, by design</h2>
