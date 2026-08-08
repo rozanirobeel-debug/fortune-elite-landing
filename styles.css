@@ -51,13 +51,13 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 12px 30px -18px rgba(0,0,0,0.5);
 }
 .brand { display: flex; align-items: center; gap: 14px; }
-.brand-logo { height: 34px; width: auto; transition: height 0.35s var(--ease); }
+.brand-logo { height: 46px; width: auto; transition: height 0.35s var(--ease); }
 .brand-logo--fortune {
-  background: var(--navy-950); border-radius: 8px; padding: 5px 10px;
+  background: var(--navy-950); border-radius: 8px; padding: 7px 14px;
   box-shadow: 0 6px 18px -8px rgba(0,0,0,0.55);
 }
-.brand-logo--saffron { height: 30px; }
-.site-header.scrolled .brand-logo { height: 26px; }
+.brand-logo--saffron { height: 42px; }
+.site-header.scrolled .brand-logo { height: 34px; }
 .brand-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.3); }
 .main-nav { display: flex; gap: 34px; }
 .main-nav a {
@@ -265,7 +265,10 @@ a { color: inherit; text-decoration: none; }
 .developer-inner {
   display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; text-align: center;
 }
-.dev-logo { height: 40px; opacity: 0.9; }
+.dev-logo { height: 58px; opacity: 0.95; }
+.dev-logo--fortune {
+  background: var(--navy-950); border-radius: 10px; padding: 8px 16px;
+}
 .dev-copy { max-width: 480px; color: var(--ink-soft); font-size: 0.98rem; line-height: 1.6; }
 
 /* ---------- enquire ---------- */
@@ -292,8 +295,11 @@ a { color: inherit; text-decoration: none; }
 /* ---------- footer ---------- */
 .site-footer { background: var(--navy-950); padding: 50px 6vw 40px; text-align: center; }
 .footer-brands { display: flex; justify-content: center; gap: 24px; margin-bottom: 22px; }
-.footer-logo { height: 26px; filter: brightness(0) invert(1); opacity: 0.85; }
-.footer-logo--saffron { filter: none; }
+.footer-logo { height: 40px; opacity: 0.95; }
+.footer-logo--fortune {
+  background: var(--navy-800); border-radius: 8px; padding: 6px 12px;
+}
+.footer-logo--saffron { height: 44px; }
 .footer-inner p { color: rgba(255,255,255,0.7); font-size: 0.92rem; margin-bottom: 6px; }
 .footer-fine { color: rgba(255,255,255,0.4) !important; font-size: 0.8rem !important; }
 
