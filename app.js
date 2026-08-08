@@ -67,8 +67,30 @@
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      note.textContent = "Thanks — this preview form doesn't send anywhere yet. Hook it up to a real inbox before launch.";
-      note.style.color = '#ffb066';
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      const endpoint = 'https://formsubmit.co/ajax/' + form.action.split('/').pop();
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error('Request failed');
+          form.reset();
+          note.textContent = "Thanks — your enquiry has been sent. We'll be in touch shortly.";
+          note.style.color = '#9be29b';
+          submitBtn.textContent = 'Submit Enquiry';
+          submitBtn.disabled = false;
+        })
+        .catch(() => {
+          note.textContent = "Something went wrong sending that — please call or email us directly instead.";
+          note.style.color = '#ff8b8b';
+          submitBtn.textContent = 'Submit Enquiry';
+          submitBtn.disabled = false;
+        });
     });
   }
 })();

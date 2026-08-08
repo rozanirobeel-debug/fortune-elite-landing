@@ -168,7 +168,11 @@
       <p class="tag reveal">Enquire Now</p>
       <h2 class="reveal">Interested in Fortune Elite?</h2>
       <p class="body-text reveal">Leave your details and our team will get back to you.</p>
-      <form class="enquiry-form reveal" id="enquiryForm">
+      <form class="enquiry-form reveal" id="enquiryForm" action="https://formsubmit.co/robeel@thefortunegroup.in" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry — Fortune Elite website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your name" required>
           <input type="tel" name="phone" placeholder="Phone number" required>
@@ -176,7 +180,7 @@
         <input type="email" name="email" placeholder="Email address">
         <textarea name="message" placeholder="Tell us what you're looking for" rows="3"></textarea>
         <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
-        <p class="form-note" id="formNote">This form is a preview — it isn't wired to send anywhere yet.</p>
+        <p class="form-note" id="formNote">Submissions are emailed straight to our team.</p>
       </form>
     </div>
   </section>
